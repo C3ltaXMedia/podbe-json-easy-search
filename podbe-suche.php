@@ -20,6 +20,13 @@ $valueinput = rawurlencode($_POST["suche"]);
 $jsonfile = file_get_contents('http://podbe.wikibyte.org/podbeapi/?json=core.get_search_results&search='. $valueinput .'');	
 $suche = json_decode($jsonfile,TRUE);
 
+
+
+//test
+echo 'input:'. $valueinput = $_POST["suche"] . '<br>';
+echo 'decode:'. $valueinput = rawurlencode($_POST["suche"]) . '<br>';
+
+
 //Schleife [0] +....
 $ergebnis = 0; 
 while ($ergebnis < count($suche["posts"]))  {           
