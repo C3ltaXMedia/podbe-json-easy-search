@@ -24,7 +24,9 @@ $suche = json_decode($jsonfile,TRUE);
 
 //test
 echo 'input:'. $valueinput = $_POST["suche"] . '<br>';
-echo 'decode:'. $valueinput = rawurlencode($_POST["suche"]) . '<br>';
+echo 'decode:'. $valueinput = rawurlencode($_POST["suche"]) . '<br>
+<hr />
+<h5>Ergebnis:</h5><br>';
 
 
 //Schleife [0] +....
